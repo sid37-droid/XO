@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Крестики-нолики</title>
+  <link rel="stylesheet" href="./assets/style/reset.css">
+  <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Крестики-нолики</h1>
+    <div class="game__mode">
+      <label for="mode">Выберите режим игры:</label>
+      <select id="mode">
+        <option value="computer">Играть с компьютером</option>
+        <option value="player">Играть с другом</option>
+      </select>
+    </div>
+    <div id="board">
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+    </div>
+    <div class="difficulty__choice">
+      <label for="difficulty">Выберите уровень сложности:</label>
+      <select id="difficulty">
+        <option value="easy">Простой</option>
+        <option value="hard">Сложный</option>
+      </select>
+    </div>
+    <div class="buttons">
+      <button id="restart">Начать новую игру</button>
+      <button id="save">Сохранить игру</button>
+      <button id="load">Загрузить последнюю сохраненную игру</button>
+    </div>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
